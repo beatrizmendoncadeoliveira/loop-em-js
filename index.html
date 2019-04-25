@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Controle Financeiro</title>
+		<link rel="icon" href="favicon.png" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h1 class="titulo">Controle Financeiro</h1>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Registros</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Descrição</th>
+							<th>Categoria</th>
+							<th>Data</th>
+							<th>Valor</th>
+							<th>Saldo</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-receitas">
+						<tr class="receita" id="primeira-receita">
+							<td class="info-descricao">Crédito Salário</td>
+							<td class="info-categoria">Crédito</td>
+							<td class="info-data">05/10/2017</td>
+							<td class="info-valor">1500.00</td>
+							<td class="info-saldo">0</td>
+						</tr>
+
+						<tr class="receita" id="segunda-receita">
+							<td class="info-descricao">Pãozinho</td>
+							<td class="info-categoria">Débito</td>
+							<td class="info-data">06/10/2017</td>
+							<td class="info-valor">-7.50</td>
+							<td class="info-saldo">0</td>
+						</tr>
+
+						<tr class="receita" id="terceira-receita">
+							<td class="info-descricao">Conta de Luz</td>
+							<td class="info-categoria">Débito</td>
+							<td class="info-data">08/10/2017</td>
+							<td class="info-valor">-102.90</td>
+							<td class="info-saldo">0</td>
+						</tr>
+
+						<tr class="receita" id="quarta-receita">
+							<td class="info-descricao">Freela</td>
+							<td class="info-categoria">Crédito</td>
+							<td class="info-data">08/10/2017</td>
+							<td class="info-valor">750.00</td>
+							<td class="info-saldo">0</td>
+						</tr>
+						<tr class="receita" id="quinta-receita" >
+							<td class="info-descricao">Cartão Crédito</td>
+							<td class="info-categoria">Débito</td>
+							<td class="info-data">10/10/2017</td>
+							<td class="info-valor">-2900.00</td>
+							<td class="info-saldo">0</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</section>
+
+			<section class="container">
+		    <h2 id="titulo-form">Adicionar nova receita</h2>
+		    <form id="form-adiciona" name="formulario">
+		        <div class="">
+		            <label for="descricao">Descrição:</label>
+		            <input id="descricao" name="descricao" type="text" placeholder="digite a descrição da sua receita" class="campo">
+		        </div>
+		        <div class="grupo">
+		            <label for="categoria">Categoria:</label>
+		            <input id="categoria" name="categoria" type="text" placeholder="digite a categoria da sua receita" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="data">Data:</label>
+		            <input id="data" name="data" type="text" placeholder="digite a data da sua receita" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="valor">Valor: R$</label>
+		            <input id="valor" type="text" placeholder="digite o valor da sua receita" class="campo campo-medio">
+		        </div>
+
+		        <button id="adicionar-receita" class="botao bto-principal">Adicionar</button>
+		    </form>
+			</section>
+		</main>
+		 <ul class="erros"></div>
+			       
+
+		<script src="script.js"" ></script>
+
+	</body>
+</html>
